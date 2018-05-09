@@ -1,4 +1,4 @@
-package com.collection.map;
+package com.guideme.collection.map;
 
 import java.util.Enumeration;
 import java.util.Hashtable;
