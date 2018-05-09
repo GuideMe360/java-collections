@@ -1,4 +1,4 @@
-package com.collection.list;
+package com.guideme.collection.list;
 
 import java.util.LinkedList;
 import java.util.List;
