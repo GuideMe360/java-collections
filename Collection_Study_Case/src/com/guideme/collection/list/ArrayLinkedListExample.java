@@ -3,8 +3,6 @@ package com.guideme.collection.list;
 import java.util.LinkedList;
 import java.util.List;
 
-import javax.swing.plaf.synth.SynthStyle;
-
 public class ArrayLinkedListExample {
 
 	public static void main(String[] args) {
