@@ -62,7 +62,7 @@ public class CountDuplicatesExample {
 		list.add("ban");
 		list.add("can");
 		list.add("can");
-		list.add("arun");
+		list.add("arun ");
 		list.add("c");
 		list.add("a");
 		list.add("a");
