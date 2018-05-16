@@ -1,6 +1,6 @@
 package com.guideme.collection.list.dto;
 
-public class Book {
+public class Book implements Comparable<Book> {
 	int id;
 	String name, author, publisher;
 	int quantity;
@@ -51,6 +51,17 @@ public class Book {
 
 	public void setQuantity(int quantity) {
 		this.quantity = quantity;
+	}
+
+	@Override
+	public int compareTo(Book book) {
+		if (book.id == getId()) {
+			return 0;
+		} else if (getId() > book.id) {
+			return 1;
+		} else {
+			return -1;
+		}
 	}
 
 }
