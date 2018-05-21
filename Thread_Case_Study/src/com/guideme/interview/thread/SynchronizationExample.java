@@ -1,4 +1,4 @@
-package com.guideme.interview.thread;
+/*package com.guideme.interview.thread;
 
 class Counter {
 	synchronized void printCounter(int n) {
@@ -56,3 +56,4 @@ public class SynchronizationExample  {
 	}
 
 }
+*/
