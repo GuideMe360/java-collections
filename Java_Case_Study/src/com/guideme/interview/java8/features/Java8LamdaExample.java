@@ -21,10 +21,10 @@ public class Java8LamdaExample {
 		System.out.println("10 + 5 :" + addition.operation(10, 5));
 		System.out.println("10 - 5 :" + substraction.operation(10, 5));
 
-		Greetingervice greeting = (message) -> message*10;
-		System.out.println(">>>>>> :"+greeting.sayMessage(10));
-		
-		TestInterface ti = (message) -> System.out.println("Hello :"+message);
+		Greetingervice greeting = (message) -> message * 10;
+		System.out.println(">>>>>> :" + greeting.sayMessage(10));
+
+		//TestInterface ti = (message) -> System.out.println("Hello :" + message);
 	}
 
 }
