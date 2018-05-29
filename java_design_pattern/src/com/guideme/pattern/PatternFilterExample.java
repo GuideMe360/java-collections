@@ -2,17 +2,17 @@
  * Author :Arun Ammasai
  * JAVA/J2EE Programmer
  * 27-May-2018
- */
+ *//*
 package com.guideme.pattern;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Stream;
 
-/**
+*//**
  * @author Arun
  *
- */
+ *//*
 public class PatternFilterExample {
 	public static void main(String[] args) {
 		Product apple = new Product("Apple", Color.BLUE, Size.MEDIUM);
@@ -28,8 +28,10 @@ public class PatternFilterExample {
 				.forEach(p -> System.out.println("This Product :" + p.name + " is Blue"));
 		bf.filter(products, new SizeSpecification(Size.LARGE))
 				.forEach(p -> System.out.println("This Product :" + p.name + " is Large"));
-		
-		bf.filter(products, new AndSpecification<>(new ColorSpecification(Color.GREEN), new SizeSpecification(Size.LARGE))).forEach(p -> System.out.println("This Product green :" + p.name + " and Large"));
+
+		bf.filter(products,
+				new AndSpecification<>(new ColorSpecification(Color.GREEN), new SizeSpecification(Size.LARGE)))
+				.forEach(p -> System.out.println("This Product green :" + p.name + " and Large"));
 	}
 }
 
@@ -116,4 +118,4 @@ class Product {
 		this.size = size;
 	}
 
-}
+}*/
