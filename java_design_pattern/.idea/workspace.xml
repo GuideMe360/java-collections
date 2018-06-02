@@ -12,13 +12,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SingleResponsibilityClass.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/guideme/pattern/SingleResponsibilityClass.java">
+      <file leaf-file-name="FluentBuilderRecursiveGenerics.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/guideme/pattern/FluentBuilderRecursiveGenerics.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="741">
-              <caret line="52" column="5" lean-forward="true" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+            <state relative-caret-position="323">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#117#118#0" expanded="true" />
+                <element signature="e#126#127#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -30,6 +31,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/com/guideme/pattern/SingleResponsibilityClass.java" />
+        <option value="$PROJECT_DIR$/src/com/guideme/pattern/FluentBuilderRecursiveGenerics.java" />
       </list>
     </option>
   </component>
@@ -44,6 +46,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -62,26 +66,17 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pattern" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="java_design_pattern" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java_design_pattern" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pattern" type="462c0819:PsiDirectoryNode" />
-              <item name="SingleResponsibilityClass.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="C:/development/Java" />
+    <property name="last_opened_file_path" value="D:/Study/jars/javatuples-1.2.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RunDashboard">
@@ -96,7 +91,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.FluentBuilderRecursiveGenerics">
+    <configuration name="FluentBuilderRecursiveGenerics" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.guideme.pattern.FluentBuilderRecursiveGenerics" />
+      <module name="java_design_pattern" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
     <configuration name="SingleResponsibilityClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.guideme.pattern.SingleResponsibilityClass" />
       <module name="java_design_pattern" />
@@ -125,8 +125,13 @@
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
     </configuration>
+    <list>
+      <item itemvalue="Application.SingleResponsibilityClass" />
+      <item itemvalue="Application.FluentBuilderRecursiveGenerics" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FluentBuilderRecursiveGenerics" />
         <item itemvalue="Application.SingleResponsibilityClass" />
       </list>
     </recent_temporary>
@@ -150,28 +155,38 @@
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32983193" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Designer" order="2" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18020834" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/guideme/pattern/SingleResponsibilityClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="52" column="5" lean-forward="true" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/guideme/pattern/SingleResponsibilityClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
@@ -184,10 +199,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/guideme/pattern/SingleResponsibilityClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
+        <state relative-caret-position="768">
           <caret line="52" column="5" lean-forward="true" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/guideme/pattern/FluentBuilderRecursiveGenerics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#117#118#0" expanded="true" />
+            <element signature="e#126#127#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -268,6 +294,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Java</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

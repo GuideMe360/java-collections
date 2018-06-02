@@ -7,9 +7,9 @@ import org.javatuples.Triplet;
 
 public class DependencyInversionPrinciple {
 	public static void main(String[] args) {
-		Person parent = new Person("John");
-		Person child1 = new Person("Chris");
-		Person child2 = new Person("Matt");
+		PersonDTO parent = new PersonDTO("John");
+		PersonDTO child1 = new PersonDTO("Chris");
+		PersonDTO child2 = new PersonDTO("Matt");
 
 		Relationships rs = new Relationships();
 		rs.addParentandChild(parent, child1);
@@ -23,10 +23,10 @@ enum Relationship {
 	PARENT, CHILD, SIBLIN;
 }
 
-class Person {
+class PersonDTO {
 	public String name;
 
-	public Person(String name) {
+	public PersonDTO(String name) {
 		this.name = name;
 	}
 
@@ -37,14 +37,14 @@ class Person {
 }
 
 class Relationships {
-	private List<Triplet<Person, Relationship, Person>> relations = new ArrayList<Triplet<Person, Relationship, Person>>();
+	private List<Triplet<PersonDTO, Relationship, PersonDTO>> relations = new ArrayList<Triplet<PersonDTO, Relationship, PersonDTO>>();
 
-	public void addParentandChild(Person parent, Person child) {
+	public void addParentandChild(PersonDTO parent, PersonDTO child) {
 		relations.add(new Triplet<>(parent, Relationship.PARENT, child));
 		relations.add(new Triplet<>(child, Relationship.CHILD, parent));
 	}
 
-	public List<Triplet<Person, Relationship, Person>> getRelations() {
+	public List<Triplet<PersonDTO, Relationship, PersonDTO>> getRelations() {
 		return relations;
 	}
 
@@ -52,7 +52,7 @@ class Relationships {
 
 class Research {
 	public Research(Relationships relationships) {
-		List<Triplet<Person, Relationship, Person>> relations = relationships.getRelations();
+		List<Triplet<PersonDTO, Relationship, PersonDTO>> relations = relationships.getRelations();
 		relations.stream().filter(p -> p.getValue0().name.equals("John") && p.getValue1() == Relationship.PARENT)
 				.forEach(ch -> System.out.println("John has a child called :" + ch.getValue2().name));
 	}
