@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 import com.guideme.collections.CollectionHelper;
 
@@ -11,7 +12,8 @@ public class FindDuplicateElements {
 
 	public static void main2(String[] args) {
 		Integer[] arr = { 1, 2, 5, 6, 8, 7, 4, 1, 4, 7, 1 };
-		List<Integer> list = Arrays.asList(arr);
+		List<Integer> list = Arrays.stream(arr).distinct().collect(Collectors.toList());//Arrays.asList(arr);
+		Arrays.stream(arr).distinct().collect(Collectors.toList());
 		Map<Integer, Integer> map = new HashMap<>();
 		for (Integer i : list) {
 			Integer count = map.get(i);
