@@ -1,8 +1,8 @@
-package com.guidme.corejava.abstraction.banks;
+package com.guideme.corejava.abstraction.banks;
 
-import com.guidme.corejava.abstraction.common.Bank;
-import com.guidme.corejava.abstraction.dtos.RegisterUser;
-import com.guidme.corejava.abstraction.dtos.TransactionDTO;
+import com.guideme.corejava.abstraction.common.Bank;
+import com.guideme.corejava.abstraction.dtos.RegisterUser;
+import com.guideme.corejava.abstraction.dtos.TransactionDTO;
 
 public class CitiBank extends Bank {
 

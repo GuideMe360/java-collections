@@ -1,4 +1,4 @@
-package com.guidme.corejava.abstraction.dtos;
+package com.guideme.corejava.abstraction.dtos;
 
 import javax.xml.bind.annotation.XmlRootElement;
 

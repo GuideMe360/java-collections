@@ -1,4 +1,4 @@
-package com.guidme.corejava.abstraction.entities;
+package com.guideme.corejava.abstraction.entities;
 
 import java.io.Serializable;
 import javax.persistence.*;

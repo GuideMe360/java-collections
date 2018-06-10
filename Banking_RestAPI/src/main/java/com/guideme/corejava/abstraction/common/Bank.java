@@ -1,10 +1,10 @@
 /**
  * 
  */
-package com.guidme.corejava.abstraction.common;
+package com.guideme.corejava.abstraction.common;
 
-import com.guidme.corejava.abstraction.dtos.RegisterUser;
-import com.guidme.corejava.abstraction.dtos.TransactionDTO;
+import com.guideme.corejava.abstraction.dtos.RegisterUser;
+import com.guideme.corejava.abstraction.dtos.TransactionDTO;
 
 /**
  * @author Arun

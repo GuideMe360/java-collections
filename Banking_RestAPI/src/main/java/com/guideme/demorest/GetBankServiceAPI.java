@@ -5,9 +5,9 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-import com.guidme.corejava.abstraction.common.Bank;
-import com.guidme.corejava.abstraction.dtos.TransactionDTO;
-import com.guidme.corejava.abstraction.banks.*;
+import com.guideme.corejava.abstraction.banks.*;
+import com.guideme.corejava.abstraction.common.Bank;
+import com.guideme.corejava.abstraction.dtos.TransactionDTO;
 
 @Path("bankingService")
 public class GetBankServiceAPI {
