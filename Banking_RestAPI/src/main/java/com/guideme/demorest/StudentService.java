@@ -1,6 +1,5 @@
 package com.guideme.demorest;
 
-import java.util.Arrays;
 import java.util.List;
 
 import javax.ws.rs.GET;
@@ -9,17 +8,15 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 import com.guideme.restapi.dtos.Student;
+import com.guideme.restapi.mockup.StudentMockup;
 
 @Path("studentService")
 public class StudentService {
 
+	StudentMockup mockup = new StudentMockup();
 	@GET
 	@Produces(MediaType.APPLICATION_ATOM_XML)
 	public List<Student> getStudents () {
-		Student s1 = new Student("Arun", "Ammasai");
-		Student s2 = new Student("Dennis", "John");
-
-		List<Student> students = Arrays.asList(s1, s2);
-		return students;
+		return mockup.getStudents();
 	}
 }
