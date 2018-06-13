@@ -1,4 +1,4 @@
-package com.guideme.corejava.abstraction.dbutil;
+package com.guideme.restapi.dbutil;
 
 public class JdbcUtil {
 	/*public static DataSource getOracleDataSource() {

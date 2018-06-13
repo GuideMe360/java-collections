@@ -1,10 +1,10 @@
 /**
  * 
  */
-package com.guideme.corejava.abstraction.common;
+package com.guideme.restapi.common;
 
-import com.guideme.corejava.abstraction.dtos.RegisterUser;
-import com.guideme.corejava.abstraction.dtos.TransactionDTO;
+import com.guideme.restapi.dtos.RegisterUser;
+import com.guideme.restapi.dtos.TransactionDTO;
 
 /**
  * @author Arun

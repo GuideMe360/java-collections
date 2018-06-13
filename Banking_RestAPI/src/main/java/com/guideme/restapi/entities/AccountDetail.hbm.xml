@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 10 Jun, 2018 7:35:36 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.guidme.corejava.abstraction.entities.AccountDetail" table="ACCOUNTDETAIL">
+        <id name="accountDetailId" type="long">
+            <column name="ACCOUNTDETAILID" />
+            <generator class="assigned" />
+        </id>
+        <property name="accountType" type="java.lang.String">
+            <column name="ACCOUNTTYPE" />
+        </property>
+        <many-to-one name="customerDetail" class="com.guidme.corejava.abstraction.entities.CustomerDetail" fetch="join">
+            <column name="CUSTOMERDETAIL" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

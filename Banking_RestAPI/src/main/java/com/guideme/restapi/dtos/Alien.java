@@ -1,4 +1,4 @@
-package com.guideme.demorest;
+package com.guideme.restapi.dtos;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
@@ -11,7 +11,7 @@ public class Alien {
 
 	}
 
-	Alien(String name, int points) {
+	public Alien(String name, int points) {
 		this.name = name;
 		this.points = points;
 	}

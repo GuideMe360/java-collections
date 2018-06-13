@@ -1,14 +1,14 @@
-package com.guideme.corejava.abstraction.banks;
+package com.guideme.restapi.banks;
 
-import com.guideme.corejava.abstraction.common.Bank;
-import com.guideme.corejava.abstraction.dtos.RegisterUser;
-import com.guideme.corejava.abstraction.dtos.TransactionDTO;
+import com.guideme.restapi.common.Bank;
+import com.guideme.restapi.dtos.RegisterUser;
+import com.guideme.restapi.dtos.TransactionDTO;
 
-public class BankOfAmerica extends Bank {
+public class HdfcBank extends Bank {
 
 	TransactionDTO transactionDTO = new TransactionDTO();
 
-	BankOfAmerica(TransactionDTO transactionDTO) {
+	HdfcBank(TransactionDTO transactionDTO) {
 		this.transactionDTO = transactionDTO;
 	}
 
@@ -41,7 +41,7 @@ public class BankOfAmerica extends Bank {
 			total = balance + withdrawAmont;
 		}
 
-		if (withdrawAmont > 15000) {
+		if (withdrawAmont > 50000) {
 			int serviceCharge = Bank.serviceCharge;
 			total = total + serviceCharge;
 		}
@@ -55,4 +55,5 @@ public class BankOfAmerica extends Bank {
 		// TODO Auto-generated method stub
 		
 	}
+
 }

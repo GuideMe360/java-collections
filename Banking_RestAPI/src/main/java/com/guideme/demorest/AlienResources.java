@@ -5,6 +5,8 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
+import com.guideme.restapi.dtos.Alien;
+
 @Path("alien")
 public class AlienResources {
 	@GET

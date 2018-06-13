@@ -1,4 +1,4 @@
-package com.guideme.corejava.abstraction.dtos;
+package com.guideme.restapi.dtos;
 
 public class RegisterUser {
 	private String customerName;

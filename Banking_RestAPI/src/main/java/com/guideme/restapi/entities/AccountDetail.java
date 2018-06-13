@@ -1,4 +1,4 @@
-package com.guideme.corejava.abstraction.entities;
+package com.guideme.restapi.entities;
 
 import java.io.Serializable;
 

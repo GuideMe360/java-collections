@@ -1,7 +1,7 @@
-package com.guideme.corejava.abstraction.banks;
+package com.guideme.restapi.banks;
 
-import com.guideme.corejava.abstraction.common.Bank;
-import com.guideme.corejava.abstraction.dtos.TransactionDTO;
+import com.guideme.restapi.common.Bank;
+import com.guideme.restapi.dtos.TransactionDTO;
 
 public class BankTestClient {
 
