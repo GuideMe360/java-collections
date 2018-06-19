@@ -44,6 +44,25 @@ public class StudentMockup {
 		ps.setString(2, s.getLastName());
 		ps.executeUpdate();
 	}
+	
+	public Student updateStudent(Student s) throws SQLException {
+		String updateQuery = "update student set lastname =? where firstname =?";
+		PreparedStatement ps = getDataSource().prepareStatement(updateQuery);
+		ps.setString(1, s.getLastName());
+		ps.setString(2, s.getFirstName());
+		int count = ps.executeUpdate();
+		System.out.println("Updated Record Count :" + count);
+		return s;
+	}
+	
+	public Student dropStudent(Student s) throws SQLException {
+		String updateQuery = "DELETE FROM STUDENT WHERE firstname=?";
+		PreparedStatement ps = getDataSource().prepareStatement(updateQuery);
+		ps.setString(1, s.getFirstName());
+		int count = ps.executeUpdate();
+		System.out.println("Deleted Record Count :"+count);
+		return s;
+	}
 
 	public Connection getDataSource() {
 		Connection con = null;
